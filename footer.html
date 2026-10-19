@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>footer</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/all.css" />
+  </head>
+  <style>
+    .footer-area {
+      background-color: #051922;
+      color: #fff;
+      padding: 150px 0;
+    }
+
+    .container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    h2.ftr-title {
+      font-size: 24px;
+      font-weight: 500;
+      position: relative;
+      padding-bottom: 20px;
+      color: #fff;
+    }
+    h2.ftr-title::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 20px;
+      height: 2px;
+      background-color: #f28123;
+      content: "";
+    }
+
+    .ftr-box p {
+      color: #fff;
+      opacity: 0.7;
+      line-height: 1.8;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    .pg ul li {
+      position: relative;
+      padding-left: 20px;
+      opacity: 0.7;
+      margin-bottom: 10px;
+      line-height: 1.8;
+    }
+    .pg ul li::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: "\f105";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      color: #f28123;
+    }
+
+    .pg ul li a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        color: #f28123;
+        transition: 0.3s;
+      }
+    }
+
+    .email input {
+      padding: 15px;
+      background-color: #012738;
+      border: none;
+      width: 70%;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    .email i {
+      width: 20%;
+      border: none;
+      background-color: #012738;
+      color: #f28123;
+      padding: 19px 0;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-top-left-radius: 0;
+      cursor: pointer;
+      border-bottom-left-radius: 0;
+
+      &:hover {
+        background-color: #f28123;
+      }
+    }
+  </style>
+  <body>
+    <div class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="ftr-box about-us">
+              <h2 class="ftr-title">About us</h2>
+              <p>
+                Ut enim ad minim veniam perspiciatis unde omnis iste natus error
+                sit voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque ipsa quae.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="ftr-box gt">
+              <h2 class="ftr-title">Get In Touch</h2>
+              <p>34/8, East Hukupara, Gifirtok, Sadan..</p>
+              <p>support@fruitkha.com</p>
+              <p>+00 111 222 3333</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="ftr-box pg">
+              <h2 class="ftr-title">Pages</h2>
+              <ul class="m-0 p-0 list-unstyled">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Shop</a>
+                </li>
+                <li>
+                  <a href="#">News</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="ftr-box about-us">
+              <h2 class="ftr-title">Subscribe</h2>
+              <p>Subscribe to our mailing list to get the latest updates.</p>
+              <div class="email">
+                <input type="email" placeholder="Email" />
+                <i class="fa-solid fa-paper-plane btn"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/all.css">
+</head>
+<style>
+    #video-container{
+        min-height: 200px;
+        min-width: 300px;
+    }
+    .video-box{
+        min-height: 200px;
+        min-width: 300px;
+        height: 400px;
+        width: 100%;
+    }
+    .sz{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .modal-body{
+        padding: 0;
+    }
+    .modal{
+        --bs-modal-bg: none;
+        --bs-modal-border-color: none;
+    }
+    .modal-dialog{
+        margin: 0;
+        top: 15%;
+        left: 15%;
+    }
+
+    .vdobox{
+        background: url(/imgs/about/abt.jpg) no-repeat center;
+        background-size: contain;
+        /* background-color: rgba(0, 0, 0, 0.5); */
+    }    
+
+    .play-btn{
+        /* position: absolute;
+        top: 40%;
+        left: 45%; */
+        background-color: #F28123;
+        color: #051922;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        font-size: 20px;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        box-shadow: 0 0 20px #adadad;
+    }
+</style>
+<body>
+    
+    <div id="video-container" class=" d-flex justify-content-center align-items-center border border-3 border-danger">
+        <div class="video-box vdobox bg-black text-success d-flex justify-content-center align-items-center">
+            <div class="filter h-100 opacity-50 "></div>
+            <a href="#video" class="play-btn " data-bs-toggle="modal">
+                <i class="fa-solid fa-play"></i>
+            </a>
+            <div id="video" class="modal">
+                <div class="modal-dialog ">
+                    <div class="modal-content">
+                        <div class="modal-body ">
+                            <iframe width="800" height="450" src="https://www.youtube.com/embed/DBLlFWYcIGQ?si=O9IP7cycYqZXNY5d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
